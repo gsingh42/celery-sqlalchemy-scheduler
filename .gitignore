@@ -118,3 +118,5 @@ dmypy.json
 *.dat
 *.dir
 .pypirc
+
+.idea/*

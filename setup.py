@@ -19,14 +19,14 @@ with open(path.join(basedir, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name="celery_sqlalchemy_scheduler",
+    name="celery_sqlalchemy_scheduler_hotstar",
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version="0.2.3",
+    version="0.2.4",
     # The project's main homepage.
-    url="https://github.com/AngelLiang/celery-sqlalchemy-scheduler",
+    url="https://github.com/gsingh42/celery-sqlalchemy-scheduler",
     # Choose your license
 
     license='MIT',
@@ -37,9 +37,9 @@ setup(
 
     platforms='any',
     # Author details
-    author="AngelLiang",
-    author_email='yannanxiu@126.com',
-    home_page='https://github.com/AngelLiang/celery-sqlalchemy-scheduler',
+    author="Gaurav Singh",
+    author_email='guarav.s@hotstar.com',
+    home_page='https://github.com/gsingh42/celery-sqlalchemy-scheduler',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[

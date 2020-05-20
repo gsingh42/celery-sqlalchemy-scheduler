@@ -98,13 +98,9 @@ class ModelEntry(ScheduleEntry):
             model.last_run_at = self._default_now()
         self.last_run_at = model.last_run_at
 
-        # 因为从数据库读取的 last_run_at 可能没有时区信息，所以这里必须加上时区信息
-        self.last_run_at = self.last_run_at.replace(tzinfo=self.app.timezone)
-
-        # self.options['expires'] 同理
-        # if 'expires' in self.options:
-        #     expires = self.options['expires']
-        #     self.options['expires'] = expires.replace(tzinfo=self.app.timezone)
+        # Because last_run_at read from the database may not have time zone information,
+        # so time zone information must be added here
+        # self.last_run_at = self.last_run_at.replace(tzinfo=self.app.timezone)
 
     def _disable(self, model):
         model.no_changes = True
